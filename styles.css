@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #1E0555;
+}
+
+body, .quoteInput {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+     sans-serif;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    background-color: yellow;
+    padding: 1rem;
+    border-radius: .5rem;
+    width: 700px;
+    max-width: 90%;
+}
+
+.timer {
+    position: absolute;
+    top: 5rem;
+    font-size: 40px;
+    color: yellow;
+    font-weight: bold;
+}
+
+.quoteDisplay {
+    font-size: 16px;
+    margin-bottom: 1rem;
+    margin-left: calc(1rem + 2px);
+    margin-right: calc(1rem + 2px);
+}
+
+.quoteInput {
+    background-color: transparent;
+    border: 2px solid rgb(150, 150, 5);
+    outline: none;
+    width: 100%;
+    height: 8rem;
+    margin: auto;
+    resize: none;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    border-radius: 1.5rem;
+}
+
+.quoteInput:focus{
+    border-color: black;
+}
+
+.correct{
+    color: rgb(11, 219, 11);
+}
+
+.incorrect{
+    color: red;
+    text-decoration: underline;
+}
+
+.records{
+    text-align: center;
+    color: white;
+    animation: fadeIn 1s;
+    transition: 1s ease-in all;
+}
+@keyframes fadeIn{
+    0%{opacity:0;}
+    80%{opacity:0.5;}
+    100%{opacity:1;}
+}
