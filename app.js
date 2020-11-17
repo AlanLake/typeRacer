@@ -1,4 +1,4 @@
-const quote_api = 'http://api.quotable.io/random'
+const quote_api = 'https://api.quotable.io/random'
 const quoteDisplayElement = document.getElementById('quoteDisplay')
 const quoteInputElement = document.getElementById('quoteInput')
 const timer = document.getElementById('timer')
@@ -79,4 +79,5 @@ function renderRecord() {
 }
 
 renderNewQuote()
+xxxxxxxxxxxxxxx
 
