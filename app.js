@@ -30,9 +30,9 @@ quoteInputElement.addEventListener('input', () =>{
         setTimer()
     }
     if (finished) {
+        clearInterval(time);
         renderRecord()
         renderNewQuote()
-        clearInterval(time)
     }
 })
 
@@ -79,5 +79,5 @@ function renderRecord() {
 }
 
 renderNewQuote()
-xxxxxxxxxxxxxxx
+
 
